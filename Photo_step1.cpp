@@ -24,16 +24,16 @@ void fillZero(std::string &val)
 int main(int argc, char const *argv[])
 {
 	std::string all_line;
-	for (int i = 1; i <= 30; ++i)
+	for (int i = 1; i <= 30; ++i) //i stand academy code (2)
 	{
-		for (int j = 1; j <= 20; ++j)
+		for (int j = 1; j <= 20; ++j) //j stand major code (2)
 		{
-			for (int k = 1; k <= 300; ++k)
+			for (int k = 1; k <= 300; ++k) //k stand private code (3)
 			{
 				std::string temp1 = convertToString(i);
 				if (i < 10) fillZero(temp1);
 				
-				std::string temp2 = convertToString(j);
+				std::string temp2 = convertToString(j); 
 				if(j < 10) fillZero(temp2);	
 				
 				std::string temp3 = convertToString(k);
@@ -55,6 +55,8 @@ int main(int argc, char const *argv[])
 	
 	ofstream ofs("dic.txt");
 	ofs << all_line;
+	ofs.close();
+	
 	return 0;
 } //end main()
 
