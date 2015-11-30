@@ -13,7 +13,7 @@ std::string convertToString(const T val) //function to change int to string
 	ss << val;
 	ss >> s;
 	return s;
-} //end function
+} //end function convertToString()
 
 void fillZero(std::string &val)
 {
@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
 	ofstream ofs("dic.txt");
 	ofs << all_line;
 	ofs.close();
-	
+
 	return 0;
 } //end main()
 
