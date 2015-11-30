@@ -57,3 +57,11 @@ int main(int argc, char const *argv[])
 	ofs << all_line;
 	return 0;
 } //end main()
+
+
+/*
+//This is the first way to try.
+//It's only test whether the "wget" can use or not.
+//The dictionary using this program built is unscientific.
+//You should use it carefully.
+*/ 
