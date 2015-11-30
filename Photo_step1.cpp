@@ -1,7 +1,5 @@
-#include <map>
 #include <string>
 #include <fstream>
-#include <iostream>
 #include <iostream>
 #include <strstream>
 
@@ -22,14 +20,15 @@ void fillZero(std::string &val)
 	val = "0" + val; 
 }
 
+
 int main(int argc, char const *argv[])
 {
 	std::string all_line;
 	for (int i = 1; i <= 30; ++i)
 	{
-		for (int j = 01; j <= 20; ++j)
+		for (int j = 1; j <= 20; ++j)
 		{
-			for (int k = 001; k <= 300; ++k)
+			for (int k = 1; k <= 300; ++k)
 			{
 				std::string temp1 = convertToString(i);
 				if (i < 10) fillZero(temp1);
@@ -54,7 +53,7 @@ int main(int argc, char const *argv[])
 		} //end for
 	}
 	
-	std::ofstream ofs("dic.txt");
+	ofstream ofs("dic.txt");
 	ofs << all_line;
 	return 0;
-}
+} //end main()
